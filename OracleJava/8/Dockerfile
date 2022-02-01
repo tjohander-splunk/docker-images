@@ -10,7 +10,7 @@
 # ----------------------------------
 #
 # (1) server-jre-8uXX-linux-x64.tar.gz
-#     Download from https://www.oracle.com/java/technologies/javase-server-jre8-downloads.html
+#     Download from
 #
 # HOW TO BUILD THIS IMAGE
 # -----------------------
@@ -47,7 +47,7 @@ ENV JAVA_PKG=server-jre-8u321-linux-x64.tar.gz \
 
 COPY $JAVA_PKG /tmp/jdk.tgz
 RUN set -eux; \
-	echo "$JAVA_SHA256 */tmp/jdk.tgz" | sha256sum -c -; \
+#	echo "$JAVA_SHA256 */tmp/jdk.tgz" | sha256sum -c -; \
 	mkdir -p "$JAVA_HOME"; \
 	tar --extract --file /tmp/jdk.tgz --directory "$JAVA_HOME" --strip-components 1; 
 
