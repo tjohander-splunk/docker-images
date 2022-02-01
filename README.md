@@ -1,5 +1,7 @@
 # Docker Images from Oracle
 
+## This repo was forked from Oracle
+
 This repository contains [Dockerfiles](https://docs.docker.com/engine/reference/builder/)
 and samples to build [Docker](https://www.docker.com/what-docker) images for
 Oracle commercial products and [Oracle sponsored open source projects](https://opensource.oracle.com).
